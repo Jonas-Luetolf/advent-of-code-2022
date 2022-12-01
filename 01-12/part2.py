@@ -1,7 +1,6 @@
-with open("input.txt","r") as f:
-    inp=f.read().strip()
+import helper
 
-data=inp.split("\n\n")
+data=helper.read_inp("input.txt",sep="\n\n")
 data=[i.split("\n") for i in data]
 sums=[]
 

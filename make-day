@@ -1,6 +1,7 @@
 #!/bin/sh
 
 mkdir $(date +"%d-%m")
+cp helper.py $(date +"%d-%m")/ 
 cd $(date +"%d-%m")
 touch part1.py
 touch part2.py

@@ -1,8 +1,9 @@
+import helper
 with open("input.txt","r") as f:
     inp=f.read().strip()
-
-data=inp.split("\n\n")
+data=helper.read_inp("input.txt",sep="\n\n")
 data=[i.split("\n") for i in data]
+
 max_sum=(0,0)
 
 for index,i in enumerate(data):
